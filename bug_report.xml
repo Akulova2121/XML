@@ -1,1 +1,20 @@
-
+<Title>Адресат не получает файл с разрешением jpg вложеный в письмо</Title>
+  <Summary>При отправке письма с вложением фаила формата Фотография - jpg, адресат получает письмо без вложения</Summary>
+  <Environment>Google Chrome Версия 99.0.4844.84</Environment>
+ <Precondition>
+       <number1>Пройдена регистрация пользователя через e-mail. Данные для регистрации email - Luda9911@mail.ru пароль test0102@</number1>
+		   <number2>Есть доступ к почте Akula2211@mail.ru пароль '2233h@'</number2>
+		   <number3>В папкe 'Изображения' добавлен файл 'Море.jpg'</number3>
+   </Precondition>
+ <StepToReproduce>
+       <number1>Нажать на ссылку 'Написать письмо'</number1>
+			  <number2> Заполнить поле 'Кому' значением Akula2211@mail.ru</number2>
+			  <number3>Заполнить 'Тема' значением 'Море'</number3>
+		  	<number4>Нажать 'Прикрепить файл' и выбрать из папки 'Изображения' фаил 'Море.jpg'</number4>
+        <number5>В поле ввода текста ввести 'Очень красивые места'</number5>
+		  	<number6>Нажать кнопку 'Отправить'</number6>
+  </StepToReproduce>
+  <ExpectedResult>Письмо получено адресатом с файлом формата jpg</ExpectedResult>
+  <Result>Письмо получено без вложения</Result>
+  <Severity>Major</Severity>
+  <Priority>Hign</Priority>
